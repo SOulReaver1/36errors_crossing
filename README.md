@@ -43,7 +43,7 @@ Rendez vous sur `http://localhost:8000`
 
 ## Rendu
 
-Ce repository a été créé par [Je remplis mon nom ici].  
+Ce repository a été créé par [Ilan JOURNO].  
 Je déclare sur l'honneur n'avoir pas triché et n'avoir fait appel à l'aide d'aucun de mes camarades.
 
 
