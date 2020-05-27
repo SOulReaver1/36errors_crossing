@@ -11,6 +11,7 @@ use \Model\Factory\Farm as FarmFactory;
 class Villager extends General{
 
   public function createAction(Request $request){
+    var_dump($request);
     $name = $request->get("name");
     $village_id = $request->get("village_id");
 

@@ -4,11 +4,11 @@
   <?php if (count($villages) > 0): ?>
   <form action="/villager/create" method="POST">
     <input type="text" class="input is-fullwidth" name="name" placeholder="Nom du villageois"><br>
-    <select type="text" class="input is-fullwidth" name="village_id" >
-      <?php foreach($villages as $village):?>
-        <option 
-            value="<?php $village->id;?>"
-        ><?php echo $village->getName()?></option>
+    <select type="text" class="input is-fullwidth" name="village_id">
+      <?php foreach($villages as $village): ?>
+      
+        <option value="<?php echo $village->id;?>"
+        ><?php echo $village->getName();?> </option>
       <?php endforeach;?>
 
     </select>
