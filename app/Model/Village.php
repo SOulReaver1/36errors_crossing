@@ -24,7 +24,7 @@ class Village{
   }
   
   public function hasFarm(){
-    return !is_null($this->hasfarm);
+    return !is_null($this->has_farm);
   }
 
 }
