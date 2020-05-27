@@ -16,11 +16,11 @@ class Village{
   }
 
   public function getVillagers(){
-    $this->villagers;
+    return $this->villagers;
   }
 
   public function hasMarket(){
-    return !is_nul($this->has_market);
+    return !is_null($this->has_market);
   }
   
   public function hasFarm(){
