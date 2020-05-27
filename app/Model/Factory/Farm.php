@@ -27,7 +27,7 @@ class Farm extends AbstractFactory{
   }
 
   public function countInVillage($village_id){
-    $q = "SELECT COUNT(1) as c FROM market WHERE village_id = :village_id";
+    $q = "SELECT COUNT(1) as c FROM farm WHERE village_id = :village_id";
     $stmt = $this->pdo->prepare($q);
     $stmt->execute([":village_id" => $village_id]);
     $count = $stmt->fetchColumn();

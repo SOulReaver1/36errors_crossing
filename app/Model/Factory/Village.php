@@ -38,7 +38,6 @@ class Village extends AbstractFactory{
   public function add_farm($village_id){
     $q = "INSERT INTO farm SET 
             village_id = :village_id, stock = 0";
-    $q = "INSERT INTO market SET village_id = :village_id";
     $stmt = $this->pdo->prepare($q);
     $stmt->execute([":village_id" => $village_id]);
     $id = $this->pdo->lastInsertId();
