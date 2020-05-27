@@ -8,7 +8,7 @@ use \Model\Factory\Villager as VillagerFactory;
 use \Model\Factory\Market as MarketFactory;
 use \Model\Factory\Farm as FarmFactory;
 
-class Village{
+class Village extends General{
 
   public function newAction(Request $request){
     $name = $request->get("name");
