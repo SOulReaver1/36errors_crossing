@@ -12,7 +12,7 @@ class Village{
   }
 
   public function addVillager($villager){
-    $this->villagers = $villager;
+    $this->villagers[] = $villager;
   }
 
   public function getVillagers(){
