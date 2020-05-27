@@ -27,7 +27,7 @@
     </header>
     <div class="card-content">
       <div class="content">
-        <?php if (count($village->getVillagers())): ?>
+        <?php if (count($village->getVillagers()) > 0): ?>
           <ul>
             <?php foreach ($village->getVillagers() as $villager): ?>
               <li><?php echo $villager->getSummary();?></li>
