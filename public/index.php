@@ -28,9 +28,8 @@ try{
   $controllerName = ucfirst($controllerName);
   $controllerName = "Controller\\".$controllerName;
   $actionName = $action ?? "index";
-
   $controller = new $controllerName($pdo);
-
+  
   $methodName = $actionName."Action";
   
   $controller->$methodName($request);
