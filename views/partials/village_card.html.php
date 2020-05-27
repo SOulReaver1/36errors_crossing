@@ -50,6 +50,7 @@
       </form>
 
       <form action="/village/add_farm" method="POST" class="card-footer-item">
+        <input type="hidden" name="village_id" value="<?php echo $village->id;?>" />
         <button type="submit" class="button is-primary is-light">
         <span class="icon">
           <i class="fas fa-plus-circle"></i>

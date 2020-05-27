@@ -36,8 +36,9 @@ class Village extends General{
   }
 
   public function add_farmAction(Request $request){
+    var_dump($request);
     $village_id = $request->get("village_id");
-
+    var_dump($village_id);
     $farmFactory = new FarmFactory($this->pdo);
     $farm_nb = $farmFactory->countInVillage($village_id);
 
