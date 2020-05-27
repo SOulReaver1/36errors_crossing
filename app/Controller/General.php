@@ -6,7 +6,7 @@ abstract class General {
   public $pdo;
 
   public function __construct(\PDO $pdo){
-    $this->pdo = $dpo;
+    $this->pdo = $pdo;
   }
 
 }
