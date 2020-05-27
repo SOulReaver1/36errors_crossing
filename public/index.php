@@ -32,8 +32,8 @@ try{
   $controller = new $controllerName($pdo);
 
   $methodName = $actionName."Action";
-  $methodName->$controller($request);
-
+  
+  $controller->$methodName($request);
 }catch(Exception $e){
   $message = $e->getMessage();
   $trace = $e->getTraceAsString();
